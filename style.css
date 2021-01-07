@@ -1,0 +1,200 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto 0;
+}
+
+p {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* MAKES THE NAV BAR SLIDE WITH PAGE SCROLL */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li:not(:first-child):before {
+    content: " | ";
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.mainClick {
+    font-size: 3rem;
+    color: blue;
+}
+
+/* ADDED THIS to adjust for screen sizes */
+@media only screen and (max-width: 900px) {
+    .main-nav {
+        font-size: 1em;
+        padding: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .mainClick {
+        font-size: 1.5em;
+        padding: 0 auto;
+    }
+}
+
+/* COVER STYLE ADDED */
+.container1 {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container2 {
+    margin:20px;
+    padding:50px;
+    display:grid;
+    gap: 1px 50px;
+    align-items: center;
+    justify-content:center;
+    grid-template-columns: repeat(auto-fill, minmax(500px, auto));
+   
+}
+
+.bioText {
+    font-size:1.5rem;
+}
+
+.bioimg {
+    width: 100%;
+    height: auto;
+}
+
+/* ADDED GRID TO PHOTO SECTION */
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.grid-wrapper {
+    background-color: blue;
+}
+
+/* MAKES ALL CHILDREN OF CLASS="BOX", IMG = 100% */
+.box > img {
+    width:100%;
+}
+
+/* THIS ADD COLOR TO BACKROUND OF IMG AND SHRINKS IMG DOWN BY ADDING PADDING */
+.box {
+    
+    padding: 30px;
+    margin: 20px;
+}
+
+.box:hover {
+    transform:scale(1.1); 
+    transition: all 1s;
+}
+
+.container3 {
+    /* display:inline-flex; margin:20px; */
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+ .green{
+    
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
