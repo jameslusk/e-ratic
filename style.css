@@ -6,7 +6,7 @@ body {
     margin: auto 0;
 }
 
-p {
+p, h1 {
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -93,12 +93,12 @@ a {
     gap: 1px 50px;
     align-items: center;
     justify-content:center;
-    grid-template-columns: repeat(auto-fill, minmax(500px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(45%, auto));
    
 }
 
 .bioText {
-    font-size:1.5rem;
+    font-size:2rem;
 }
 
 .bioimg {
@@ -141,40 +141,106 @@ a {
     gap: 1px 50px;
     align-items: center;
     justify-content:center;
-    grid-template-columns: repeat(auto-fill, minmax(500px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(45%, auto));
 }
 
 .kaareIMG {
-
+    width: 100%;
+    height: auto;
 }
 
 .kaareBIO {
-    font-size: 1.1rem;
-
+    font-size: 1.2rem;
 }
 
+.grid-wrapper2 {
+    margin: 0px;
+    /* padding:50px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: blue;
+    display:grid;
+    align-items: center;
+    /* grid-template-columns: 25% auto 25%; */
+    grid-template-columns: 25% auto 25%;
+}
 
+.findKaare {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.box2 {
+    width:25%;
+}
+
+.box3 {
+    width:70%;
+}
+
+.box4 {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+.hov:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition: all 1s;
+}
+
+footer {
+    margin: 0px;
+}
+
+.footlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px; 
+}
+
+.mylink {
+    width: 6vh;
+    height: auto;
+    margin: 0px;
+    transition: all 1s;
+}
+
+.mylink:hover {
+    transform: scale(1.1);
+}
+
+.footerText {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .resize-font {
+        font-size: 100%;
+        padding: 0 auto;
+    }
+}
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
- .green{
-    
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
 
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #6ba6e2 0%, #4a86c2 44%, blue 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6ba6e2 0%,#4a86c2 44%, blue 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6ba6e2 0%,#4a86c2 44%,blue 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6ba6e2 0%,#4a86c2 44%,blue 100%); /* IE10+ */
+    background: linear-gradient(top, #6ba6e2 0%,#4a86c2 44%,blue 100%); /* W3C */
 }
 
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-.red{
+.red {
 
     background: #C655BE; /* Old browsers */
     background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
@@ -183,30 +249,4 @@ a {
     background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
     background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
