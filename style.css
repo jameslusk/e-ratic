@@ -135,10 +135,22 @@ a {
 }
 
 .container3 {
-    /* display:inline-flex; margin:20px; */
-    display:inline-flex;
+    margin:20px;
+    padding:50px;
+    display:grid;
+    gap: 1px 50px;
     align-items: center;
     justify-content:center;
+    grid-template-columns: repeat(auto-fill, minmax(500px, auto));
+}
+
+.kaareIMG {
+
+}
+
+.kaareBIO {
+    font-size: 1.1rem;
+
 }
 
 
