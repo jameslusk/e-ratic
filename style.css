@@ -162,7 +162,7 @@ a {
     display:grid;
     align-items: center;
     /* grid-template-columns: 25% auto 25%; */
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .findKaare {
